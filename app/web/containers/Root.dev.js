@@ -14,7 +14,6 @@ export default class Root extends Component {
       <Provider store={this.props.store}>
         <div>
           <ReactNativeWebHelloWorld />
-          <DevTools />
         </div>
       </Provider>
     );

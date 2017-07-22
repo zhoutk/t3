@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"ios": "node node_modules/react-native/local-cli/cli.js start",
+		"ios": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
 		"ios-bundle": "node node_modules/react-native/local-cli/cli.js bundle --dev false --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
 		"ios-dev-bundle": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
 		"android-bundle": "node node_modules/react-native/local-cli/cli.js --dev false --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",

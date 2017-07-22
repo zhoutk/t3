@@ -10,19 +10,18 @@ import {
   Text,
   StyleSheet,
 } from 'react-native';
+import { Button } from 'antd-mobile';
 
 export default class HelloWorld extends Component {
   render() {
     const { onPress, color } = this.props;
-    const style = StyleSheet.create({
-      helloworld: {
-        color: color,
-        textAlign: 'center',
-      }
-    });
+    // const style = StyleSheet.create({
+    //     color: color
+    // });
+      let style = {backgroundColor:color};
     return (
       <View>
-        <Text onPress={onPress} style={style.helloworld}>Hello World</Text>
+        <Button onClick={onPress} style={style}>Hello World</Button>
       </View>
     )
   }

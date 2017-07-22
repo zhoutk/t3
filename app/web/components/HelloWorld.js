@@ -10,7 +10,7 @@ export default class HelloWorld extends Component {
   render() {
     const { onClick, color } = this.props;
     return (
-      <Button className="hello-word" onClick={onClick} style={{color: color}}>Hello  World</Button>
+      <Button className="hello-word" onClick={onClick} style={{backgroundColor: color}}>Hello  World</Button>
 
     );
   }
