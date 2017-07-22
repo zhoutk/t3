@@ -9,7 +9,7 @@ export default class HelloWorld extends Component {
   render() {
     const { onClick, color } = this.props;
     return (
-      <div className="hello-word" onClick={onClick} style={{color: color}}>Hello World</div>
+      <div className="hello-word" onClick={onClick} style={{color: color}}>Hello  World</div>
     );
   }
 }
