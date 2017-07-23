@@ -1,10 +1,21 @@
 /**
  * Author: gaopeng
  * Date：  2017/7/9
- * Time:   9:18
+ * Time:   9:17
  */
-if (process.env.NODE_ENV === 'production') {
-  module.exports = require('./Root.prod');
-} else {
-  module.exports = require('./Root.dev');
+import React, { Component  } from 'react';
+import { Provider }             from 'react-redux';
+import ReactNativeWebHelloWorld from './App';
+import Wrapper from '../styles';
+
+export default class Root extends Component {
+  render() {
+    return (
+      <Provider store={this.props.store}>
+        <Wrapper>
+          <ReactNativeWebHelloWorld />
+        </Wrapper>
+      </Provider>
+    );
+  }
 }

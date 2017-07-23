@@ -6,7 +6,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // dumb components
-import Header     from '../components/Header';
 import HelloWorld from '../components/HelloWorld';
 // actions
 import {
@@ -20,13 +19,10 @@ class ReactNativeWebHelloWorld extends Component {
     const { dispatch, color, data } = this.props;
 
     return (
-      <div className="react-native-web">
-        <Header />
         <HelloWorld
           onClick={() => dispatch(toggleColor())}
           color={color}
         />
-      </div>
     );
   }
 }

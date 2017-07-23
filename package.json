@@ -3,8 +3,8 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
-		"ios": "export NODE_ENV=development && node node_modules/react-native/local-cli/cli.js start",
+		"start": "export NODE_ENV=development && export PLATFORM_ENV=app && node node_modules/react-native/local-cli/cli.js start --reset-cache",
+		"ios": "export NODE_ENV=development && export PLATFORM_ENV=app && node node_modules/react-native/local-cli/cli.js start",
 		"ios-bundle": "node node_modules/react-native/local-cli/cli.js bundle --dev false --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
 		"ios-dev-bundle": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
 		"android-bundle": "node node_modules/react-native/local-cli/cli.js --dev false --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
@@ -20,7 +20,8 @@
 		"react-native": "0.42.3",
 		"react-redux": "^5.0.5",
 		"redux": "^3.7.2",
-		"redux-thunk": "^2.2.0"
+		"redux-thunk": "^2.2.0",
+		"styled-components": "^2.1.1"
 	},
 	"devDependencies": {
 		"autoprefixer": "^7.1.2",
