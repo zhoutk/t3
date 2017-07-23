@@ -6,7 +6,7 @@
 import React, { Component  } from 'react';
 import { Provider }             from 'react-redux';
 import ReactNativeWebHelloWorld from './App';
-import Wrapper from '../styles';
+import Wrapper from '../styled';
 
 export default class Root extends Component {
   render() {
