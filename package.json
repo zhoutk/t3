@@ -3,8 +3,9 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"start": "export NODE_ENV=development && export PLATFORM_ENV=app && node node_modules/react-native/local-cli/cli.js start --reset-cache",
-		"ios": "export NODE_ENV=development && export PLATFORM_ENV=app && node node_modules/react-native/local-cli/cli.js start",
+		"start": "react-native run-ios",
+		"ios": "export NODE_ENV=development && node node_modules/react-native/local-cli/cli.js start",
+		"ios-reset": "export NODE_ENV=development && node node_modules/react-native/local-cli/cli.js start --reset-cache",
 		"ios-bundle": "node node_modules/react-native/local-cli/cli.js bundle --dev false --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
 		"ios-dev-bundle": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js --platform ios --bundle-output ios/main.jsbundle",
 		"android-bundle": "node node_modules/react-native/local-cli/cli.js --dev false --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
@@ -14,7 +15,7 @@
 		"test": "jest"
 	},
 	"dependencies": {
-		"antd-mobile": "^1.5.0",
+		"antdm": "^1.5.1",
 		"react": "~15.4.1",
 		"react-dom": "~15.4.1",
 		"react-native": "0.42.3",

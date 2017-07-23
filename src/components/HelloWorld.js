@@ -4,7 +4,7 @@
  * Time:   9:04
  */
 import React, { Component } from 'react';
-import { Button } from 'antd-mobile';
+import { Button } from 'antdm';
 
 export default class HelloWorld extends Component {
   render() {

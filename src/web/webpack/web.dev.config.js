@@ -76,7 +76,7 @@ module.exports = {
                     loader:'babel-loader',
                     options:{
                         presets: ['es2015', "stage-2", 'react'],
-                        plugins: [ ["transform-runtime"],["import", {libraryName: "antd-mobile", style: true}]
+                        plugins: [ ["transform-runtime"],["import", {libraryName: "antdm", style: true}]
                         ],
                     }
                 }],

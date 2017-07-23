@@ -6,7 +6,7 @@
 import React, { Component  } from 'react';
 import { Provider }             from 'react-redux';
 import ReactNativeWebHelloWorld from './App';
-import {View} from 'antd-mobile';
+import {View} from 'antdm';
 
 export default class Root extends Component {
   render() {
