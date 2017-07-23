@@ -10,7 +10,7 @@
 		"android-bundle": "node node_modules/react-native/local-cli/cli.js --dev false --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
 		"android-dev-bundle": "node node_modules/react-native/local-cli/cli.js --entry-file index.android.js --platform android --bundle-output android/app/src/main/assets/index.android.bundle",
 		"web-bundle": "webpack --config web/webpack/web.prod.config.js --progress --colors",
-		"web": "webpack-dev-server --content-base web/public/ --config web/webpack/web.dev.config.js --port 3000 --inline --hot --colors",
+		"web": "webpack-dev-server --content-base src/web/ --config src/web/webpack/web.dev.config.js --port 3000 --historyApiFallback --inline --hot --colors",
 		"test": "jest"
 	},
 	"dependencies": {

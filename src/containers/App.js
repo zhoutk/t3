@@ -11,7 +11,7 @@ import HelloWorld from '../components/HelloWorld';
 // actions
 import {
   toggleColor,
-} from '../../actions/actions';
+} from '../actions/actions';
 
 /** The app entry point */
 class ReactNativeWebHelloWorld extends Component {

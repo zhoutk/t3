@@ -14,10 +14,10 @@ module.exports = {
         // 'babel-polyfill',
         // 'webpack-hot-middleware/client',
         // 'webpack/hot/only-dev-server',
-        path.join(__dirname, '../../app/web/index'),
+        path.join(__dirname, '../index'),
     ],
     output: {
-        path: path.join(__dirname, '../public'),
+        path: path.join(__dirname, '../src/web'),
         filename: 'bundle.js',
         publicPath: '/',
     },

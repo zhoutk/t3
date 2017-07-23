@@ -5,8 +5,8 @@ import {
     Text,
     View
 } from 'react-native';
-import Root from  './app/native/containers/Root';
-import configureStore from './app/store/configureStore.js';
+import Root from  './src/native/containers/Root';
+import configureStore from './src/store/configureStore.js';
 
 const store = configureStore();
 

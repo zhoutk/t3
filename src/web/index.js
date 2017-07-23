@@ -6,11 +6,11 @@
 import React          from 'react';
 import { render }     from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import Root           from './containers/Root';
+import Root           from '../containers/Root';
 import configureStore from '../store/configureStore';
 
 // load our css
-require('./styles/style.less');
+require('../styles/style.less');
 
 const store = configureStore();
 // const rootElement = document.getElementById('root');
@@ -25,7 +25,7 @@ render(
 
 // For hot reloading of react components
 if (module.hot) {
-  module.hot.accept('./containers/Root', () => {
+  module.hot.accept('../containers/Root', () => {
     render(
       <AppContainer>
         <Root store={store} />
