@@ -14,13 +14,5 @@ const createDevStoreWithMiddleware = compose(
 )(createStore);
 
 export default function configureStore() {
-  const store = createDevStoreWithMiddleware(StockApp);
-  if (module.hot) {
-    module.hot.accept('../reducers', () => {
-      const nextReducer = require('../reducers');
-      store.replaceReducer(nextReducer);
-    })
-  }
-
-  return store;
+  return createDevStoreWithMiddleware(StockApp);
 }
