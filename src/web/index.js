@@ -22,14 +22,3 @@ render(
   document.getElementById('root')
 )
 
-// For hot reloading of react components
-if (module.hot) {
-  module.hot.accept('../containers/Root', () => {
-    render(
-      <AppContainer>
-        <Root store={store} />
-      </AppContainer>,
-      document.getElementById('root')
-    )
-  });
-}
